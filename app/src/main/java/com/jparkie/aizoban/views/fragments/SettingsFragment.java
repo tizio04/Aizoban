@@ -27,7 +27,6 @@ public class SettingsFragment extends PreferenceFragment implements SettingsView
 
         addPreferencesFromResource(R.xml.preferences);
 
-        findPreference(getString(R.string.preference_view_google_play_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_view_disclaimer_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_clear_latest_key)).setOnPreferenceClickListener(this);
         findPreference(getString(R.string.preference_clear_favourite_key)).setOnPreferenceClickListener(this);

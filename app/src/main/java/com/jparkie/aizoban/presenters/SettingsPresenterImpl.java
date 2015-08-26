@@ -1,7 +1,5 @@
 package com.jparkie.aizoban.presenters;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.support.v4.app.FragmentActivity;
@@ -84,10 +82,7 @@ public class SettingsPresenterImpl implements SettingsPresenter {
 
     @Override
     public boolean onPreferenceClick(Preference preference) {
-        if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_google_play_key))) {
-            viewGooglePlayListing();
-            return true;
-        } else if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_disclaimer_key))) {
+        if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_view_disclaimer_key))) {
             displayDisclaimer();
             return true;
         } else if (preference.getKey().equals(mSettingsView.getContext().getString(R.string.preference_clear_latest_key))) {
@@ -108,16 +103,6 @@ public class SettingsPresenterImpl implements SettingsPresenter {
         }
 
         return false;
-    }
-
-    private void viewGooglePlayListing() {
-        final String appPackageName = mSettingsView.getContext().getPackageName();
-
-        try {
-            mSettingsView.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-        } catch (android.content.ActivityNotFoundException anfe) {
-            mSettingsView.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
-        }
     }
 
     private void displayDisclaimer() {
