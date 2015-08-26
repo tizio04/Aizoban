@@ -8,16 +8,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/grid_item_thumbnail_height"
-            android:id="@+id/thumbnailImageView"/>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.4"
             android:id="@+id/maskImageView"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_item_thumbnail_height"
+            android:id="@+id/thumbnailImageView"/>
 
     </FrameLayout>
 

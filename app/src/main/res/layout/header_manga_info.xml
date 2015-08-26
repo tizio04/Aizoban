@@ -15,17 +15,17 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/baseline_component_unit">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/manga_header_thumbnail_height"
-                android:id="@+id/headerImageView"/>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.4"
                 android:background="@color/primaryBlue500"
                 android:id="@+id/maskImageView" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/manga_header_thumbnail_height"
+                android:id="@+id/headerImageView"/>
 
         </FrameLayout>
 
