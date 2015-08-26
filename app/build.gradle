@@ -5,11 +5,11 @@ android {
     buildToolsVersion "21.1.1"
 
     defaultConfig {
-        applicationId "com.jparkie.aizoban"
+        applicationId "net.chevione.aizoban"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 27
-        versionName "1.2.5"
+        versionCode 28
+        versionName "1.2.6"
     }
     buildTypes {
         release {

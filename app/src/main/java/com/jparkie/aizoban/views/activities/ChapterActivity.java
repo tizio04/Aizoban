@@ -114,6 +114,8 @@ public class ChapterActivity extends BaseActivity implements ChapterView, Chapte
         mChapterPresenter.initializeOptions();
 
         mChapterPresenter.initializeDataFromUrl(getSupportFragmentManager());
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     @Override
