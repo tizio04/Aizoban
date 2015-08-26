@@ -1,4 +1,4 @@
-Aizoban (Depreciated)
+Aizoban
 =======
 
 ![Feature Graphic](https://cloud.githubusercontent.com/assets/9499097/5429148/16e40ee2-83af-11e4-9588-f52f1104b9c4.jpg)
@@ -9,7 +9,7 @@ This Android application allows users to browse a catalogue of mangas from vario
 
 ### APK Download
 
-[**Direct Download**: (Version 1.2.5)](Aizoban/Aizoban_27.apk)
+[**Direct Download**: (Version 1.2.6)](Aizoban/releases/download/v1.2.6/Aizoban_28.apk)
 
 ## Source
 
