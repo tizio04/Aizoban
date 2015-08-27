@@ -62,6 +62,7 @@ public class ChapterPresenterOfflineImpl implements ChapterPresenter {
     private boolean mIsRightToLeftDirection;
     private boolean mIsLockOrientation;
     private boolean mIsLockZoom;
+    private boolean mShowPageNumber;
 
     private boolean mInitialized;
     private int mInitialPosition;
@@ -106,9 +107,11 @@ public class ChapterPresenterOfflineImpl implements ChapterPresenter {
         mIsRightToLeftDirection = PreferenceUtils.isRightToLeftDirection();
         mIsLockOrientation = PreferenceUtils.isLockOrientation();
         mIsLockZoom = PreferenceUtils.isLockZoom();
+        mShowPageNumber = PreferenceUtils.hidePageNumber();
 
         mChapterMapper.applyIsLockOrientation(mIsLockOrientation);
         mChapterMapper.applyIsLockZoom(mIsLockZoom);
+        mChapterMapper.setHidePageNumber(mShowPageNumber);
     }
 
     @Override

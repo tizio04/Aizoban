@@ -114,6 +114,9 @@
     <string name="preference_clear_image_cache_key">preference_clear_image_cache</string>
     <string name="preference_clear_image_cache_title">Clear Image Cache</string>
     <string name="preference_clear_image_cache_summary">Delete all cached images and thumbnails</string>
+    <string name="preference_page_number_key">preference_page_number_key</string>
+    <string name="preference_page_number_title">Hide page number</string>
+    <string name="preference_page_number_summary">Disable the page number in fullscreen view</string>
 
     <!-- Download: -->
     <string name="preference_download_wifi_key">preference_download_wifi</string>

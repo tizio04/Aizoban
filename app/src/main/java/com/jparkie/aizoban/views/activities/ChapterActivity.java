@@ -58,6 +58,7 @@ public class ChapterActivity extends BaseActivity implements ChapterView, Chapte
     private TextView mPageNumberView;
 
     private boolean mSystemUIVisibility;
+    private boolean mHidePageNumber;
 
     public static Intent constructOnlineChapterActivityIntent(Context context, RequestWrapper chapterRequest, int position) {
         Intent argumentIntent = new Intent(context, ChapterActivity.class);
@@ -550,6 +551,11 @@ public class ChapterActivity extends BaseActivity implements ChapterView, Chapte
     }
 
     @Override
+    public void setHidePageNumber(boolean hidePageNumber) {
+        mHidePageNumber = hidePageNumber;
+    }
+
+    @Override
     public void applyIsLockOrientation(boolean isLockOrientation) {
         if (isLockOrientation) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
@@ -624,7 +630,7 @@ public class ChapterActivity extends BaseActivity implements ChapterView, Chapte
     }
 
     private void showPageView() {
-        if (mPageNumberView != null) {
+        if (mPageNumberView != null && mHidePageNumber == false) {
             if (mPageNumberView.getVisibility() != View.VISIBLE) {
                 mPageNumberView.setVisibility(View.VISIBLE);
                 mPageNumberView.animate()

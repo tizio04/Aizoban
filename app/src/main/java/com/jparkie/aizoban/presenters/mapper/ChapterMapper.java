@@ -11,6 +11,8 @@ public interface ChapterMapper {
 
     public void applyViewSettings();
 
+    public void setHidePageNumber(boolean hidePageNumber);
+
     public void applyIsLockOrientation(boolean isLockOrientation);
 
     public void applyIsLockZoom(boolean isLockZoom);

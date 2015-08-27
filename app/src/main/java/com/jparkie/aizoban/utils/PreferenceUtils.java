@@ -113,6 +113,13 @@ public class PreferenceUtils {
         return sharedPreferences.getBoolean(context.getString(R.string.preference_download_wifi_key), true);
     }
 
+    public static boolean hidePageNumber() {
+        Context context = AizobanApplication.getInstance();
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return sharedPreferences.getBoolean(context.getString(R.string.preference_page_number_key), false);
+    }
+
     public static boolean isExternalStorage() {
         Context context = AizobanApplication.getInstance();
 
