@@ -1,9 +1,12 @@
 package com.jparkie.aizoban.views.activities;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -577,6 +580,12 @@ public class MangaActivity extends BaseActivity implements MangaView, MangaMappe
 
         if (mToolbar != null) {
             mToolbar.setBackgroundColor(rgbColor);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                float[] hsv = new float[3];
+                Color.RGBToHSV(Color.red(rgbColor), Color.green(rgbColor), Color.blue(rgbColor), hsv);
+                hsv[2] = hsv[2] - 0.2f;
+                getWindow().setStatusBarColor(Color.HSVToColor(hsv));
+            }
         }
         if (mMaskImageView != null) {
             mMaskImageView.setBackgroundColor(rgbColor);
