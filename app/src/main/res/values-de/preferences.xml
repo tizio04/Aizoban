@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Preference Categories: -->
+    <string name="preference_category_general_key">preference_category_general</string>
+    <string name="preference_category_general_title">Allgemein</string>
+    <string name="preference_category_catalogue_key">preference_category_catalogue</string>
+    <string name="preference_category_catalogue_title">Katalog</string>
+    <string name="preference_category_latest_key">preference_category_latest</string>
+    <string name="preference_category_latest_title">Neuste</string>
+    <string name="preference_category_favourite_key">preference_category_favourite</string>
+    <string name="preference_category_favourite_title">Favoriten</string>
+    <string name="preference_category_recent_key">preference_category_recent</string>
+    <string name="preference_category_recent_title">Kürzlich gelesene Kapitel</string>
+    <string name="preference_category_viewer_key">preference_category_viewer</string>
+    <string name="preference_category_viewer_title">Anzeige</string>
+    <string name="preference_category_download_key">preference_category_download</string>
+    <string name="preference_category_download_title">Herunterladen</string>
+    <string name="preference_category_developer_key">preference_category_developer</string>
+    <string name="preference_category_developer_title">Entwickler</string>
+
+    <!-- General: -->
+    <string name="preference_view_disclaimer_key">preference_view_disclaimer</string>
+    <string name="preference_view_disclaimer_title">Disclaimer anzeigen</string>
+    <string name="preference_view_disclaimer_summary">Bitte lies dir diesen Disclaimer bezüglich Aizōban durch</string>
+    <string name="preference_startup_key">preference_startup</string>
+    <string name="preference_startup_title">Aktueller Startbildschirm</string>
+    <string name="preference_startup_title_summary">Bestimmt welcher Startbildschrim beim öffnen angezeigt wird</string>
+    <string-array name="preference_startup_entries">
+        <item>Katalog</item>
+        <item>Neuste</item>
+        <item>Heruntergeladen</item>
+        <item>Favoriten</item>
+        <item>Kürzlich gelesene Kapitel</item>
+        <item>Download Warteschlange</item>
+        <item>Einstellungen</item>
+    </string-array>
+    <string-array name="preference_startup_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="preference_startup_default_value">0</string>
+
+    <!-- Catalogue: -->
+    <string name="preference_source_key">preference_source</string>
+    <string name="preference_source_title">Aktuelle Quelle</string>
+    <string name="preference_source_title_summary">Bestimmt welche Manga Quelle zum lesen benutzt wird</string>
+    <string-array name="preference_source_entries">
+        <item>Batoto (EN)</item>
+        <item>MangaEden (EN)</item>
+        <item>MangaHere (EN)</item>
+        <item>MangaReader (EN)</item>
+        <item>MangaEden (IT)</item>
+        <item>MangaHere (ES)</item>
+    </string-array>
+    <string-array name="preference_source_values">
+        <item>Batoto (EN)</item>
+        <item>MangaEden (EN)</item>
+        <item>MangaHere (EN)</item>
+        <item>MangaReader (EN)</item>
+        <item>MangaEden (IT)</item>
+        <item>MangaHere (ES)</item>
+    </string-array>
+    <string name="preference_source_default_value">MangaEden (EN)</string>
+
+    <!-- Latest Manga: -->
+    <string name="preference_clear_latest_key">preference_clear_latest</string>
+    <string name="preference_clear_latest_title">Bereinige neuste Manga</string>
+    <string name="preference_clear_latest_summary">Entfernt alle neuen Manga von der Liste</string>
+
+    <!-- Favorite Manga: -->
+    <string name="preference_clear_favourite_key">preference_clear_favourite</string>
+    <string name="preference_clear_favourite_title">Bereinige Favoriten</string>
+    <string name="preference_clear_favourite_summary">Entfernt alle Manga von den Favoriten</string>
+
+    <!-- Recent Chapters: -->
+    <string name="preference_clear_recent_key">preference_clear_recent</string>
+    <string name="preference_clear_recent_title">Bereinige kürzlich glesene Kapitel</string>
+    <string name="preference_clear_recent_summary">Entfernt alle kürzlich gelesenen Kapitel von der Liste</string>
+
+    <!-- Viewer: -->
+    <string name="preference_view_type_key">preference_view_type</string>
+    <string name="preference_view_type_title">Aktuelle Ansicht</string>
+    <string name="preference_view_type_title_summary">Bestimmt die aktuelle Ansicht zum lesen</string>
+    <string-array name="preference_view_type_entries">
+        <item>Zentriert passend</item>
+        <item>Breite passend</item>
+        <item>Höhe passend</item>
+    </string-array>
+    <string-array name="preference_view_type_values">
+        <item>Fit Centre</item>
+        <item>Fit Width</item>
+        <item>Fit Height</item>
+    </string-array>
+    <string name="preference_view_type_default_value">Fit Centre</string>
+    <string name="preference_lazy_loading_key">preference_lazy_loading</string>
+    <string name="preference_lazy_loading_title">Aktiviere Lazy Loading</string>
+    <string name="preference_lazy_loading_summary">Aktiviere Lazy Loading damit Bilder dynamisch nachgeladen werden um Bandbreite zu sparen</string>
+    <string name="preference_direction_key">preference_right_to_left_reading</string>
+    <string name="preference_direction_title">Aktiviere Rechts-nach-Links Lesen</string>
+    <string name="preference_direction_summary">Wische von Rechts-nach-Links anstatt von Links-nach-Rechts, um die nächste Seite zu lesen</string>
+    <string name="preference_orientation_key">preference_lock_orientation</string>
+    <string name="preference_orientation_title">Ausrichtung sperren</string>
+    <string name="preference_orientation_summary">Sperrt die Bildschirmausrichtung beim Lesen</string>
+    <string name="preference_zoom_key">preference_lock_zoom</string>
+    <string name="preference_zoom_title">Zoom sperren</string>
+    <string name="preference_zoom_summary">Sperrt den Zoom beim Wechsel der Seite</string>
+    <string name="preference_clear_image_cache_key">preference_clear_image_cache</string>
+    <string name="preference_clear_image_cache_title">Bereinige Bilder Cache</string>
+    <string name="preference_clear_image_cache_summary">Löscht alle Bilder aus dem Cache</string>
+    <string name="preference_page_number_key">preference_page_number_key</string>
+    <string name="preference_page_number_title">Seitenzahl verstecken</string>
+    <string name="preference_page_number_summary">Deaktiviert die Seitenzahl im Vollbildmodus beim Lesen</string>
+    <string name="preference_chapter_order_key">preference_page_number_key</string>
+    <string name="preference_chapter_order_title">Kapitel aufsteigend anordnen</string>
+    <string name="preference_chapter_order_summary">Aktiviert aufsteigende Kapitel Anordnung</string>
+
+    <!-- Download: -->
+    <string name="preference_download_wifi_key">preference_download_wifi</string>
+    <string name="preference_download_wifi_title">Nur über Wi-Fi herunterladen</string>
+    <string name="preference_download_wifi_summary">Kapitel werden nur über eine WI-FI Verbindung heruntergeladen</string>
+    <string name="preference_download_storage_key">preference_storage_directory</string>
+    <string name="preference_download_storage_title">Aktuelles Verzeichnis zum Herunterladen</string>
+    <string name="preference_download_storage_title_summary">Alle Kapitel werden in ein bestimmtes Verzeichnis heruntergeladen</string>
+
+    <!-- Developer: -->
+    <string name="preference_view_open_source_licenses_key">preference_view_open_source_licenses_key</string>
+    <string name="preference_view_open_source_licenses_title">Open Source Lizenzen anzeigen</string>
+
+</resources>

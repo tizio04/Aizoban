@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="toast_chapter_error">Kapitel Daten konnten nicht geladen werden. Bitte versuch es später noch mal.</string>
+    <string name="toast_cleared_image_cache">Bilder Cache bereinigt</string>
+    <string name="toast_cleared_latest">Neuste Manga von Liste entfernt</string>
+    <string name="toast_cleared_favourite">Favoriten von Liste entfernt</string>
+    <string name="toast_cleared_recent">Kürzlich gelesene Kapitel von Liste entfernt</string>
+    <string name="toast_external_storage_error">Externer Speicher konnte nicht initiiert werden. Bitte versuch es später noch mal.</string>
+    <string name="toast_latest_error">Neuste Aktualisierungen konnten nicht geladen werden. Bitte versuch es später noch mal.</string>
+    <string name="toast_manga_error">Manga Aktualisierungen konnten nicht geladen werden. Bitte versuch es später noch mal.</string>
+    <string name="toast_no_next_chapter">Kein folgendes Kapitel</string>
+    <string name="toast_no_previous_chapter">Kein vorheriges Kapitel</string>
+    <string name="toast_no_next_page">Keine folgende Seite</string>
+    <string name="toast_no_previous_page">Keine vorherige Seite</string>
+    <string name="toast_not_initialized">Nicht initialisiert. Bitte versuch es später noch mal.</string>
+
+</resources>

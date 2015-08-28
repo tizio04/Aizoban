@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_clear">Bereinigen</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_download">Herunterladen</string>
+    <string name="action_drawer_open">Öffnen</string>
+    <string name="action_drawer_close">Schließen</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_help">Hilfe</string>
+    <string name="action_left_to_right">Links-nach-Rechts</string>
+    <string name="action_lock_orientation">Ausrichtung sperren</string>
+    <string name="action_lock_zoom">Zoom sperren</string>
+    <string name="action_mark_read">Als gelesen markieren</string>
+    <string name="action_refresh">Aktualisieren</string>
+    <string name="action_right_to_left">Rechts-nach-Links</string>
+    <string name="action_search">Suche</string>
+    <string name="action_select_all">Alles auswählen</string>
+    <string name="action_select_page">Seite auswählen</string>
+    <string name="action_start_downloader">Download starten</string>
+    <string name="action_stop_downloader">Download stoppen</string>
+    <string name="action_to_top">Nach oben</string>
+    <string name="action_unlock_orientation">Ausrichtung entsperren</string>
+    <string name="action_unlock_zoom">Zoom entsperren</string>
+
+</resources>
