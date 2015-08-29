@@ -16,7 +16,7 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.jparkie.aizoban.R;
 import com.jparkie.aizoban.models.databases.RecentChapter;
-import com.makeramen.RoundedImageView;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -40,7 +40,7 @@
 
     </RelativeLayout>
 
-    <com.makeramen.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="@dimen/baseline_avatar_diameter"
         android:layout_height="@dimen/baseline_avatar_diameter"
         android:layout_gravity="start|center_vertical"

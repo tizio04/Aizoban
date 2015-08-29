@@ -16,7 +16,7 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.jparkie.aizoban.R;
 import com.jparkie.aizoban.models.databases.FavouriteManga;
-import com.makeramen.RoundedImageView;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 public class FavouriteMangaAdapter extends BaseCursorAdapter {
     public FavouriteMangaAdapter(Context context) {

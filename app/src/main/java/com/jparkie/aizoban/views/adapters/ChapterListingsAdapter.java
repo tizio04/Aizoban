@@ -55,6 +55,7 @@ public class ChapterListingsAdapter extends BaseCursorAdapter {
         }
 
         Chapter currentChapter = (Chapter) getItem(position);
+
         if (mRecentChapterUrls != null && mRecentChapterUrls.contains(currentChapter.getUrl())) {
             viewHolder.renderView(currentChapter, mContext.getResources().getColor(R.color.secondaryText), true);
         } else {

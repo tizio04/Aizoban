@@ -16,7 +16,7 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.jparkie.aizoban.R;
 import com.jparkie.aizoban.models.downloads.DownloadManga;
-import com.makeramen.RoundedImageView;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 public class DownloadMangaAdapter extends BaseCursorAdapter {
     public DownloadMangaAdapter(Context context) {
