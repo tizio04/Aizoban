@@ -117,7 +117,7 @@
     <string name="preference_page_number_key">preference_page_number_key</string>
     <string name="preference_page_number_title">Seitenzahl verstecken</string>
     <string name="preference_page_number_summary">Deaktiviert die Seitenzahl im Vollbildmodus beim Lesen</string>
-    <string name="preference_chapter_order_key">preference_page_number_key</string>
+    <string name="preference_chapter_order_key">preference_chapter_order_key</string>
     <string name="preference_chapter_order_title">Kapitel aufsteigend anordnen</string>
     <string name="preference_chapter_order_summary">Aktiviert aufsteigende Kapitel Anordnung</string>
 

@@ -117,6 +117,9 @@
     <string name="preference_page_number_key">preference_page_number_key</string>
     <string name="preference_page_number_title">Hide page number</string>
     <string name="preference_page_number_summary">Disable the page number in fullscreen view</string>
+    <string name="preference_chapter_order_key">preference_chapter_order_key</string>
+    <string name="preference_chapter_order_title">Ascending chapter order</string>
+    <string name="preference_chapter_order_summary">Enable ascending chapter order</string>
 
     <!-- Download: -->
     <string name="preference_download_wifi_key">preference_download_wifi</string>

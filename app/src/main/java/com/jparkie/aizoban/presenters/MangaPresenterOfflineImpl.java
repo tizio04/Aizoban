@@ -18,6 +18,7 @@ import com.jparkie.aizoban.models.databases.RecentChapter;
 import com.jparkie.aizoban.models.downloads.DownloadChapter;
 import com.jparkie.aizoban.models.downloads.DownloadManga;
 import com.jparkie.aizoban.presenters.mapper.MangaMapper;
+import com.jparkie.aizoban.utils.PreferenceUtils;
 import com.jparkie.aizoban.utils.wrappers.DownloadChapterSortCursorWrapper;
 import com.jparkie.aizoban.utils.wrappers.RequestWrapper;
 import com.jparkie.aizoban.views.MangaView;
@@ -57,6 +58,8 @@ public class MangaPresenterOfflineImpl implements MangaPresenter {
     private com.jparkie.aizoban.models.databases.FavouriteManga mFavouriteManga;
 
     private Parcelable mPositionSavedState;
+
+    private boolean mIsAscendingOrder;
 
     private Subscription mQueryBothMangaAndChaptersSubscription;
     private Subscription mQueryFavouriteMangaSubscription;
@@ -385,11 +388,11 @@ public class MangaPresenterOfflineImpl implements MangaPresenter {
 
         if (mRequest != null) {
             mMangaView.showRefreshing();
-
+            mIsAscendingOrder = PreferenceUtils.isAscendingOrder();
             Observable<Cursor> queryDownloadChaptersFromUrlObservable = QueryManager
                     .queryDownloadChaptersOfDownloadManga(mRequest, true);
             Observable<List<String>> queryChapterUrlsFromUrlObservable = QueryManager
-                    .queryChaptersOfMangaFromRequest(mRequest, false)
+                    .queryChaptersOfMangaFromRequest(mRequest, mIsAscendingOrder)
                     .flatMap(new Func1<Cursor, Observable<Chapter>>() {
                         @Override
                         public Observable<Chapter> call(Cursor chapterCursor) {

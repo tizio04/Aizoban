@@ -94,6 +94,11 @@
             android:title="@string/preference_page_number_title"
             android:summary="@string/preference_page_number_summary"
             android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="@string/preference_chapter_order_key"
+            android:title="@string/preference_chapter_order_title"
+            android:summary="@string/preference_chapter_order_summary"
+            android:defaultValue="false"/>
     </PreferenceCategory>
     <PreferenceCategory
         android:key="@string/preference_category_download_key"

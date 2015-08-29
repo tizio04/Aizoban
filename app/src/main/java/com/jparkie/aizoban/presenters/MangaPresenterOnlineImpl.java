@@ -16,6 +16,7 @@ import com.jparkie.aizoban.models.Chapter;
 import com.jparkie.aizoban.models.Manga;
 import com.jparkie.aizoban.models.databases.RecentChapter;
 import com.jparkie.aizoban.presenters.mapper.MangaMapper;
+import com.jparkie.aizoban.utils.PreferenceUtils;
 import com.jparkie.aizoban.utils.wrappers.RequestWrapper;
 import com.jparkie.aizoban.views.MangaView;
 import com.jparkie.aizoban.views.activities.ChapterActivity;
@@ -55,6 +56,8 @@ public class MangaPresenterOnlineImpl implements MangaPresenter {
 
     private boolean mInitialized;
     private Parcelable mPositionSavedState;
+
+    private boolean mIsAscendingOrder;
 
     private Subscription mQueryBothMangaAndChaptersSubscription;
     private Subscription mQueryFavouriteMangaSubscription;
@@ -375,10 +378,11 @@ public class MangaPresenterOnlineImpl implements MangaPresenter {
         }
 
         if (mRequest != null) {
+            mIsAscendingOrder = PreferenceUtils.isAscendingOrder();
             Observable<Cursor> queryMangaFromUrlObservable = QueryManager
                     .queryMangaFromRequest(mRequest);
             Observable<Cursor> queryChaptersFromUrlObservable = QueryManager
-                    .queryChaptersOfMangaFromRequest(mRequest, false);
+                    .queryChaptersOfMangaFromRequest(mRequest, mIsAscendingOrder);
             Observable<List<String>> queryRecentChapterUrlsObservable = QueryManager
                     .queryRecentChaptersOfMangaFromRequest(mRequest, false)
                     .flatMap(new Func1<Cursor, Observable<RecentChapter>>() {
