@@ -271,7 +271,7 @@ public class English_Batoto implements Source {
         Element artistElement = parsedDocument.select("a[href^=http://bato.to/search?artist_name]").first();
         Element descriptionElement = parsedDocument.select("tr").get(5);
         Elements genreElements = parsedDocument.select("img[src=http://bato.to/forums/public/style_images/master/bullet_black.png]");
-        Element thumbnailUrlElement = parsedDocument.select("img[src^=http://img.batoto.net/forums/uploads/]").first();
+        Element thumbnailUrlElement = parsedDocument.select("img[src^=http://img.bato.to/forums/uploads/]").first();
 
         LibrarySQLiteOpenHelper librarySQLiteOpenHelper = LibrarySQLiteOpenHelper.getInstance();
         SQLiteDatabase sqLiteDatabase = librarySQLiteOpenHelper.getWritableDatabase();
@@ -598,7 +598,8 @@ public class English_Batoto implements Source {
 
             Element temporaryElementOne = parsedDocument.getElementsByTag("a").first();
             Element temporaryElementTwo = parsedDocument.select("a[href^=http://bato.to/forums/forum/]").first();
-            Element temporaryElementThree = parsedDocument.select("img[src^=http://img.batoto.net/forums/uploads/]").first();
+            // dosen't work
+            //Element temporaryElementThree = parsedDocument.select("img[src^=http://bato.to/thumbnail/]").first();
             Elements temporaryElementsFour = parsedDocument.select("img[src=http://bato.to/forums/public/style_images/master/bullet_black.png]");
 
             String fieldSource = English_Batoto.NAME;
@@ -612,8 +613,8 @@ public class English_Batoto implements Source {
             int endIndex = fieldName.lastIndexOf(" Forums!");
             newManga.setName(fieldName.substring(startIndex, endIndex));
 
-            String fieldThumbnailUrl = temporaryElementThree.attr("src");
-            newManga.setThumbnailUrl(fieldThumbnailUrl);
+            //String fieldThumbnailUrl = temporaryElementThree.attr("src");
+            //newManga.setThumbnailUrl(fieldThumbnailUrl);
 
             String fieldGenres = "";
             for (int index = 0; index < temporaryElementsFour.size(); index++) {
