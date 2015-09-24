@@ -54,17 +54,21 @@
     <string-array name="preference_source_entries">
         <item>Batoto (EN)</item>
         <item>MangaEden (EN)</item>
+        <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
         <item>MangaReader (EN)</item>
         <item>MangaEden (IT)</item>
+        <item>Batoto (ES)</item>
         <item>MangaHere (ES)</item>
     </string-array>
     <string-array name="preference_source_values">
         <item>Batoto (EN)</item>
         <item>MangaEden (EN)</item>
+        <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
         <item>MangaReader (EN)</item>
         <item>MangaEden (IT)</item>
+        <item>Batoto (ES)</item>
         <item>MangaHere (ES)</item>
     </string-array>
     <string name="preference_source_default_value">MangaEden (EN)</string>
