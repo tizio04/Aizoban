@@ -5,7 +5,6 @@ import com.jparkie.aizoban.controllers.sources.English_MangaEden;
 import com.jparkie.aizoban.controllers.sources.English_MangaHere;
 import com.jparkie.aizoban.controllers.sources.English_MangaReader;
 import com.jparkie.aizoban.controllers.sources.English_Mangafox;
-import com.jparkie.aizoban.controllers.sources.German_MangaTube;
 import com.jparkie.aizoban.controllers.sources.Italian_MangaEden;
 import com.jparkie.aizoban.controllers.sources.Source;
 import com.jparkie.aizoban.controllers.sources.Spanish_Batoto;
