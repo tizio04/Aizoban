@@ -51,6 +51,10 @@ This library was used to conduct all the application's HTTP requests. It was use
 
 This library was relied upon heavily to create an Observable API to fetch my data. Furthermore, it was used to handle most Activity- or Fragment- bound asynchronous tasks. I really enjoyed creating an Observable API as I had complete control of the execution of the code so that in the Activities and Fragments, data would be fetched asynchronously so the UI thread will not be blocked. Meanwhile, the download manager can transpose the API call to blocking alternatives to maintain a synchronous flow of execution. Finally, the rich API set of RxJava eased composing and refractoring implementations of user cases (i.e. mapping cursors to data, zipping multiple cursors, or handling errors...).
 
+## Credits
+
+- **App Icon by Cookicons**: https://plus.google.com/102718493746376292361/posts
+
 ## License
 
     Copyright 2014 Jacob Park
