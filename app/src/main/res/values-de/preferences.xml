@@ -7,23 +7,16 @@
     <string name="preference_category_general_title">Allgemein</string>
     <string name="preference_category_catalogue_key">preference_category_catalogue</string>
     <string name="preference_category_catalogue_title">Katalog</string>
-    <string name="preference_category_latest_key">preference_category_latest</string>
-    <string name="preference_category_latest_title">Neuste</string>
-    <string name="preference_category_favourite_key">preference_category_favourite</string>
-    <string name="preference_category_favourite_title">Favoriten</string>
-    <string name="preference_category_recent_key">preference_category_recent</string>
-    <string name="preference_category_recent_title">Kürzlich gelesene Kapitel</string>
     <string name="preference_category_viewer_key">preference_category_viewer</string>
     <string name="preference_category_viewer_title">Anzeige</string>
     <string name="preference_category_download_key">preference_category_download</string>
     <string name="preference_category_download_title">Herunterladen</string>
-    <string name="preference_category_developer_key">preference_category_developer</string>
-    <string name="preference_category_developer_title">Entwickler</string>
+    <string name="preference_category_advanced_key">preference_category_advanced</string>
+    <string name="preference_category_advanced_title">fortgeschritten</string>
+    <string name="preference_category_about_key">preference_category_about</string>
+    <string name="preference_category_about_title">Über</string>
 
     <!-- General: -->
-    <string name="preference_view_disclaimer_key">preference_view_disclaimer</string>
-    <string name="preference_view_disclaimer_title">Disclaimer anzeigen</string>
-    <string name="preference_view_disclaimer_summary">Bitte lies dir diesen Disclaimer bezüglich Aizōban durch</string>
     <string name="preference_startup_key">preference_startup</string>
     <string name="preference_startup_title">Aktueller Startbildschirm</string>
     <string name="preference_startup_title_summary">Bestimmt welcher Startbildschrim beim öffnen angezeigt wird</string>
@@ -53,40 +46,25 @@
     <string name="preference_source_title_summary">Bestimmt welche Manga Quelle zum lesen benutzt wird</string>
     <string-array name="preference_source_entries">
         <item>Batoto (EN)</item>
+        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
+        <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
-        <item>MangaReader (EN)</item>
-        <item>MangaEden (IT)</item>
-        <item>Batoto (ES)</item>
         <item>MangaHere (ES)</item>
+        <item>MangaReader (EN)</item>
     </string-array>
     <string-array name="preference_source_values">
         <item>Batoto (EN)</item>
+        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
+        <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
-        <item>MangaReader (EN)</item>
-        <item>MangaEden (IT)</item>
-        <item>Batoto (ES)</item>
         <item>MangaHere (ES)</item>
+        <item>MangaReader (EN)</item>
     </string-array>
     <string name="preference_source_default_value">MangaEden (EN)</string>
-
-    <!-- Latest Manga: -->
-    <string name="preference_clear_latest_key">preference_clear_latest</string>
-    <string name="preference_clear_latest_title">Bereinige neuste Manga</string>
-    <string name="preference_clear_latest_summary">Entfernt alle neuen Manga von der Liste</string>
-
-    <!-- Favorite Manga: -->
-    <string name="preference_clear_favourite_key">preference_clear_favourite</string>
-    <string name="preference_clear_favourite_title">Bereinige Favoriten</string>
-    <string name="preference_clear_favourite_summary">Entfernt alle Manga von den Favoriten</string>
-
-    <!-- Recent Chapters: -->
-    <string name="preference_clear_recent_key">preference_clear_recent</string>
-    <string name="preference_clear_recent_title">Bereinige kürzlich glesene Kapitel</string>
-    <string name="preference_clear_recent_summary">Entfernt alle kürzlich gelesenen Kapitel von der Liste</string>
 
     <!-- Viewer: -->
     <string name="preference_view_type_key">preference_view_type</string>
@@ -115,9 +93,6 @@
     <string name="preference_zoom_key">preference_lock_zoom</string>
     <string name="preference_zoom_title">Zoom sperren</string>
     <string name="preference_zoom_summary">Sperrt den Zoom beim Wechsel der Seite</string>
-    <string name="preference_clear_image_cache_key">preference_clear_image_cache</string>
-    <string name="preference_clear_image_cache_title">Bereinige Bilder Cache</string>
-    <string name="preference_clear_image_cache_summary">Löscht alle Bilder aus dem Cache</string>
     <string name="preference_page_number_key">preference_page_number_key</string>
     <string name="preference_page_number_title">Seitenzahl verstecken</string>
     <string name="preference_page_number_summary">Deaktiviert die Seitenzahl im Vollbildmodus beim Lesen</string>
@@ -133,8 +108,25 @@
     <string name="preference_download_storage_title">Aktuelles Verzeichnis zum Herunterladen</string>
     <string name="preference_download_storage_title_summary">Alle Kapitel werden in ein bestimmtes Verzeichnis heruntergeladen</string>
 
-    <!-- Developer: -->
+    <!-- Advanced: -->
+    <string name="preference_clear_latest_key">preference_clear_latest</string>
+    <string name="preference_clear_latest_title">Bereinige neuste Manga</string>
+    <string name="preference_clear_latest_summary">Entfernt alle neuen Manga von der Liste</string>
+    <string name="preference_clear_favourite_key">preference_clear_favourite</string>
+    <string name="preference_clear_favourite_title">Bereinige Favoriten</string>
+    <string name="preference_clear_favourite_summary">Entfernt alle Manga von den Favoriten</string>
+    <string name="preference_clear_recent_key">preference_clear_recent</string>
+    <string name="preference_clear_recent_title">Bereinige kürzlich glesene Kapitel</string>
+    <string name="preference_clear_recent_summary">Entfernt alle kürzlich gelesenen Kapitel von der Liste</string>
+    <string name="preference_clear_image_cache_key">preference_clear_image_cache</string>
+    <string name="preference_clear_image_cache_title">Bereinige Bilder Cache</string>
+    <string name="preference_clear_image_cache_summary">Löscht alle Bilder aus dem Cache</string>
+
+    <!-- About: -->
     <string name="preference_view_open_source_licenses_key">preference_view_open_source_licenses_key</string>
     <string name="preference_view_open_source_licenses_title">Open Source Lizenzen anzeigen</string>
+    <string name="preference_view_disclaimer_key">preference_view_disclaimer</string>
+    <string name="preference_view_disclaimer_title">Disclaimer anzeigen</string>
+    <string name="preference_view_disclaimer_summary">Bitte lies dir diesen Disclaimer bezüglich Aizōban durch</string>
 
 </resources>
