@@ -137,9 +137,6 @@ public class CatalogueFragment extends Fragment implements CatalogueView, Catalo
             case R.id.action_filter:
                 mCataloguePresenter.onOptionFilter();
                 return true;
-            case R.id.action_to_top:
-                mCataloguePresenter.onOptionToTop();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

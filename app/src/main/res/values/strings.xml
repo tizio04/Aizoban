@@ -136,7 +136,7 @@
     <string name="resume_chapter_dialog_button_no">No</string>
 
     <!-- Chapter Items: -->
-    <string name="chapter_subtitle_progress">Image Urls Fetched:</string>
+    <string name="chapter_subtitle_progress">Image URLs Fetched:</string>
     <string name="chapter_subtitle_page">Page:</string>
 
     <!-- Chapter Help Dialog Items: -->

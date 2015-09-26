@@ -12,12 +12,8 @@
 
     <item android:id="@+id/action_filter"
         android:title="@string/action_filter"
+	android:icon="@drawable/ic_filter_list_white_24dp"
         android:orderInCategory="2"
-        app:showAsAction="never" />
-
-    <item android:id="@+id/action_to_top"
-        android:title="@string/action_to_top"
-        android:orderInCategory="3"
-        app:showAsAction="never" />
+        app:showAsAction="always|collapseActionView"/>
 
 </menu>

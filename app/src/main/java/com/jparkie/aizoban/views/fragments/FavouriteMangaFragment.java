@@ -132,16 +132,6 @@ public class FavouriteMangaFragment extends Fragment implements FavouriteMangaVi
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_to_top:
-                mFavouriteMangaPresenter.onOptionToTop();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
     // FavoriteMangaView:
 

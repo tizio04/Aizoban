@@ -115,17 +115,6 @@ public class DownloadMangaFragment extends Fragment implements DownloadMangaView
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_to_top:
-                mDownloadMangaPresenter.onOptionToTop();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
     // DownloadMangaView:
 
     @Override
