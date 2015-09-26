@@ -10,9 +10,4 @@
         app:showAsAction="always|collapseActionView"
         app:actionViewClass="android.support.v7.widget.SearchView"/>
 
-    <item android:id="@+id/action_to_top"
-        android:title="@string/action_to_top"
-        android:orderInCategory="2"
-        app:showAsAction="never" />
-
 </menu>

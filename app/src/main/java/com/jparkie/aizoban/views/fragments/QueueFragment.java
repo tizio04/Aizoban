@@ -118,9 +118,6 @@ public class QueueFragment extends Fragment implements QueueView, QueueMapper {
             case R.id.action_stop_downloader:
                 mQueuePresenter.onOptionStopDownloader();
                 return true;
-            case R.id.action_to_top:
-                mQueuePresenter.onOptionToTop();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

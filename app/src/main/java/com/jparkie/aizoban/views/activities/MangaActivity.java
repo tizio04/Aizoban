@@ -210,9 +210,6 @@ public class MangaActivity extends BaseActivity implements MangaView, MangaMappe
             case R.id.action_download:
                 mMangaPresenter.onOptionDownload();
                 return true;
-            case R.id.action_to_top:
-                mMangaPresenter.onOptionToTop();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

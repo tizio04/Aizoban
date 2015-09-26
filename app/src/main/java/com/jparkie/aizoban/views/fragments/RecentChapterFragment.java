@@ -132,16 +132,6 @@ public class RecentChapterFragment extends Fragment implements RecentChapterView
         super.onCreateOptionsMenu(menu, inflater);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_to_top:
-                mRecentChapterPresenter.onOptionToTop();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
     // RecentChapterView:
 

@@ -84,21 +84,12 @@ public class LatestMangaFragment extends Fragment implements LatestMangaView, La
         mLatestMangaPresenter.saveState(outState);
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.latest, menu);
-
-        super.onCreateOptionsMenu(menu, inflater);
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
                 mLatestMangaPresenter.onOptionRefresh();
-                return true;
-            case R.id.action_to_top:
-                mLatestMangaPresenter.onOptionToTop();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
