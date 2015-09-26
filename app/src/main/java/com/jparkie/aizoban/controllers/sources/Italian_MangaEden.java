@@ -62,7 +62,42 @@ public class Italian_MangaEden implements Source {
 
     @Override
     public Observable<List<String>> getGenres() {
-        List<String> genres = new ArrayList<String>();
+        List<String> genres = new ArrayList<String>(34);
+
+        genres.add("Avventura");
+        genres.add("Azione");
+        genres.add("Bara");
+        genres.add("Commedia");
+        genres.add("Demenziale");
+        genres.add("Dounshinji");
+        genres.add("Drama");
+        genres.add("Ecchi");
+        genres.add("Fantasy");
+        genres.add("Harem");
+        genres.add("Hentai");
+        genres.add("Horror");
+        genres.add("Josei");
+        genres.add("Magico");
+        genres.add("Mecha");
+        genres.add("Misteri");
+        genres.add("Musica");
+        genres.add("Psicologico");
+        genres.add("Raccolta");
+        genres.add("Romantico");
+        genres.add("Sci-Fi");
+        genres.add("Scolastico");
+        genres.add("Seinen");
+        genres.add("Sentimentale");
+        genres.add("Shota");
+        genres.add("Shoujo");
+        genres.add("Shounen");
+        genres.add("Sovrannaturale");
+        genres.add("Splatter");
+        genres.add("Sportivo");
+        genres.add("Storico");
+        genres.add("Vita Quotidiana");
+        genres.add("Yaoi");
+        genres.add("Yuri");
 
         return Observable.just(genres);
     }
