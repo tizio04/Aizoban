@@ -12,14 +12,14 @@
     <string name="preference_category_download_key">preference_category_download</string>
     <string name="preference_category_download_title">Herunterladen</string>
     <string name="preference_category_advanced_key">preference_category_advanced</string>
-    <string name="preference_category_advanced_title">fortgeschritten</string>
+    <string name="preference_category_advanced_title">Fortgeschritten</string>
     <string name="preference_category_about_key">preference_category_about</string>
     <string name="preference_category_about_title">Über</string>
 
     <!-- General: -->
     <string name="preference_startup_key">preference_startup</string>
     <string name="preference_startup_title">Aktueller Startbildschirm</string>
-    <string name="preference_startup_title_summary">Bestimmt welcher Startbildschrim beim öffnen angezeigt wird</string>
+    <string name="preference_startup_title_summary">Bestimmt welcher Startbildschrim beim Öffnen angezeigt wird</string>
     <string-array name="preference_startup_entries">
         <item>Katalog</item>
         <item>Neuste</item>
@@ -43,7 +43,7 @@
     <!-- Catalogue: -->
     <string name="preference_source_key">preference_source</string>
     <string name="preference_source_title">Aktuelle Quelle</string>
-    <string name="preference_source_title_summary">Bestimmt welche Manga Quelle zum lesen benutzt wird</string>
+    <string name="preference_source_title_summary">Bestimmt welche Manga Quelle benutzt wird</string>
     <string-array name="preference_source_entries">
         <item>Batoto (EN)</item>
         <item>Batoto (ES)</item>
@@ -69,7 +69,7 @@
     <!-- Viewer: -->
     <string name="preference_view_type_key">preference_view_type</string>
     <string name="preference_view_type_title">Aktuelle Ansicht</string>
-    <string name="preference_view_type_title_summary">Bestimmt die aktuelle Ansicht zum lesen</string>
+    <string name="preference_view_type_title_summary">Bestimmt die aktuelle Ansicht zum Lesen</string>
     <string-array name="preference_view_type_entries">
         <item>Zentriert passend</item>
         <item>Breite passend</item>
@@ -127,6 +127,6 @@
     <string name="preference_view_open_source_licenses_title">Open Source Lizenzen anzeigen</string>
     <string name="preference_view_disclaimer_key">preference_view_disclaimer</string>
     <string name="preference_view_disclaimer_title">Disclaimer anzeigen</string>
-    <string name="preference_view_disclaimer_summary">Bitte lies dir diesen Disclaimer bezüglich Aizōban durch</string>
+    <string name="preference_view_disclaimer_summary">Bitte lies dir diesen Disclaimer zu Aizōban durch</string>
 
 </resources>
