@@ -24,5 +24,6 @@
     <string name="action_to_top">Nach oben</string>
     <string name="action_unlock_orientation">Ausrichtung entsperren</string>
     <string name="action_unlock_zoom">Zoom entsperren</string>
+    <string name="action_share">Aktie</string>
 
 </resources>

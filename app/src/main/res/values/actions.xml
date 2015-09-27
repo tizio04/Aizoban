@@ -24,5 +24,6 @@
     <string name="action_to_top">To Top</string>
     <string name="action_unlock_orientation">Unlock Orientation</string>
     <string name="action_unlock_zoom">Unlock Zoom</string>
+    <string name="action_share">Share</string>
 
 </resources>
