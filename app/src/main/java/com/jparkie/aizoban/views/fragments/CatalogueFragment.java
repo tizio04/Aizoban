@@ -122,7 +122,7 @@ public class CatalogueFragment extends Fragment implements CatalogueView, Catalo
 
             @Override
             public boolean onQueryTextChange(String query) {
-                mCataloguePresenter.onQueryTextChange(query);
+                mCataloguePresenter.onQueryTextChange(query.trim());
 
                 return true;
             }
