@@ -30,6 +30,7 @@ public class RecentChapter implements Parcelable {
 
     private long Date;
     private int PageNumber;
+    private int MaxPageNumber;
 
     private boolean Offline;
 
@@ -51,6 +52,7 @@ public class RecentChapter implements Parcelable {
 
         Date = inputParcel.readLong();
         PageNumber = inputParcel.readInt();
+        MaxPageNumber = inputParcel.readInt();
 
         Offline = inputParcel.readByte() != 0;
     }
@@ -115,6 +117,14 @@ public class RecentChapter implements Parcelable {
         PageNumber = pageNumber;
     }
 
+    public int getMaxPageNumber() {
+        return MaxPageNumber;
+    }
+
+    public void setMaxPageNumber(int maxMageNumber) {
+        MaxPageNumber = maxMageNumber;
+    }
+
     public boolean isOffline() {
         return Offline;
     }
@@ -145,6 +155,7 @@ public class RecentChapter implements Parcelable {
 
         outputParcel.writeLong(Date);
         outputParcel.writeInt(PageNumber);
+        outputParcel.writeInt(MaxPageNumber);
 
         outputParcel.writeByte((byte) (Offline ? 1 : 0));
     }

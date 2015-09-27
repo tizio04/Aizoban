@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -57,18 +58,22 @@ public class RecentChapterAdapter extends BaseCursorAdapter {
         private TextView mSourceTextView;
         private TextView mDateTextView;
         private RoundedImageView mThumbnailImageView;
+        private ProgressBar mReadProgressBar;
 
         public ViewHolder(View itemView) {
             mNameTextView = (TextView) itemView.findViewById(R.id.nameTextView);
             mSourceTextView = (TextView) itemView.findViewById(R.id.sourceTextView);
             mDateTextView = (TextView) itemView.findViewById(R.id.dateTextView);
             mThumbnailImageView = (RoundedImageView) itemView.findViewById(R.id.avatarImageView);
+            mReadProgressBar = (ProgressBar) itemView.findViewById(R.id.readProgressBar);
         }
 
         public void renderView(Context context, RecentChapter recentChapter) {
             setName(recentChapter.getName());
             setDate(recentChapter.getDate());
             setThumbnail(context, recentChapter.getThumbnailUrl(), context.getResources().getColor(R.color.accentPinkA200));
+            float progress = (recentChapter.getPageNumber() + 1) * 100 / recentChapter.getMaxPageNumber();
+            mReadProgressBar.setProgress((int) progress);
 
             if (!recentChapter.isOffline()) {
                 setSource(recentChapter.getSource());

@@ -141,6 +141,7 @@ public class MarkReadPresenterOnlineImpl implements MarkReadPresenter {
                         recentChapter.setThumbnailUrl(null);
                         recentChapter.setDate(System.currentTimeMillis());
                         recentChapter.setPageNumber(0);
+                        recentChapter.setMaxPageNumber(0);
 
                         recentChaptersToCreate.add(recentChapter);
                     }

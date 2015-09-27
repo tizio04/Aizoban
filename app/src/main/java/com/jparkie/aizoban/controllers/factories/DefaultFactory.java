@@ -223,6 +223,7 @@ public class DefaultFactory {
 
         public static final long DEFAULT_DATE = 0;
         public static final int DEFAULT_PAGE_NUMBER = 0;
+        public static final int DEFAULT_MAX_PAGE_NUMBER = 0;
 
         public static final boolean DEFAULT_OFFLINE = false;
 
@@ -242,6 +243,7 @@ public class DefaultFactory {
 
             newInstance.setDate(DEFAULT_DATE);
             newInstance.setPageNumber(DEFAULT_PAGE_NUMBER);
+            newInstance.setMaxPageNumber(DEFAULT_MAX_PAGE_NUMBER);
 
             newInstance.setOffline(DEFAULT_OFFLINE);
 

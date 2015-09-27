@@ -61,4 +61,11 @@
         app:riv_oval="true"
         android:id="@+id/avatarImageView"/>
 
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readProgressBar"
+        android:layout_gravity="center_horizontal|bottom" />
+
 </FrameLayout>

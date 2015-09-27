@@ -224,6 +224,7 @@ public class ChapterPresenterOnlineImpl implements ChapterPresenter {
                 mRecentChapter.setThumbnailUrl(mImageUrls.get(getActualPosition()));
                 mRecentChapter.setDate(System.currentTimeMillis());
                 mRecentChapter.setPageNumber(getActualPosition());
+                mRecentChapter.setMaxPageNumber(mPagesAdapter.getCount());
 
                 QueryManager.putObjectToApplicationDatabase(mRecentChapter);
             }

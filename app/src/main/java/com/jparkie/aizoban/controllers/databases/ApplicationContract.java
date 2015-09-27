@@ -120,6 +120,7 @@ public class ApplicationContract {
 
         public static final String COLUMN_DATE = "Date";
         public static final String COLUMN_PAGE = "PageNumber";
+        public static final String COLUMN_MAX_PAGE = "MaxPageNumber";
 
         public static final String COLUMN_OFFLINE = "Offline";
 
