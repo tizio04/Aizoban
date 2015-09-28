@@ -45,4 +45,6 @@ public interface MangaPresenter {
     public void onOptionSelectAll();
 
     public void onOptionClear();
+
+    public void onOptionShare();
 }

@@ -2,6 +2,7 @@ package com.jparkie.aizoban.presenters;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.app.FragmentActivity;
@@ -329,6 +330,17 @@ public class MangaPresenterOfflineImpl implements MangaPresenter {
             Intent startService = new Intent(mMangaView.getContext(), DatabaseService.class);
             startService.putExtra(DatabaseService.INTENT_DELETE_DOWNLOAD_CHAPTERS, chaptersToDelete);
             mMangaView.getContext().startService(startService);
+        }
+    }
+
+    @Override
+    public void onOptionShare() {
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, mDownloadManga.getUrl());
+        if (shareIntent.resolveActivity(mMangaView.getContext().getPackageManager()) != null) {
+            mMangaView.getContext().startActivity(shareIntent);
         }
     }
 
