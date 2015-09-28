@@ -121,8 +121,8 @@ public class RecentChapter implements Parcelable {
         return MaxPageNumber;
     }
 
-    public void setMaxPageNumber(int maxMageNumber) {
-        MaxPageNumber = maxMageNumber;
+    public void setMaxPageNumber(int maxPageNumber) {
+        MaxPageNumber = maxPageNumber;
     }
 
     public boolean isOffline() {

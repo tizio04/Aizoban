@@ -116,7 +116,7 @@
     <string name="preference_clear_favourite_title">Bereinige Favoriten</string>
     <string name="preference_clear_favourite_summary">Entfernt alle Manga von den Favoriten</string>
     <string name="preference_clear_recent_key">preference_clear_recent</string>
-    <string name="preference_clear_recent_title">Bereinige kürzlich glesene Kapitel</string>
+    <string name="preference_clear_recent_title">Bereinige kürzlich gelesene Kapitel</string>
     <string name="preference_clear_recent_summary">Entfernt alle kürzlich gelesenen Kapitel von der Liste</string>
     <string name="preference_clear_image_cache_key">preference_clear_image_cache</string>
     <string name="preference_clear_image_cache_title">Bereinige Bilder Cache</string>

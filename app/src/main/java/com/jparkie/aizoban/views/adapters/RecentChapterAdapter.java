@@ -72,7 +72,8 @@ public class RecentChapterAdapter extends BaseCursorAdapter {
             setName(recentChapter.getName());
             setDate(recentChapter.getDate());
             setThumbnail(context, recentChapter.getThumbnailUrl(), context.getResources().getColor(R.color.accentPinkA200));
-            float progress = (recentChapter.getPageNumber() + 1) * 100 / recentChapter.getMaxPageNumber();
+            float progress = 100;
+            if(recentChapter.getMaxPageNumber() > 0) progress = (recentChapter.getPageNumber() + 1) * 100 / recentChapter.getMaxPageNumber();
             mReadProgressBar.setProgress((int) progress);
 
             if (!recentChapter.isOffline()) {
