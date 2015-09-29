@@ -289,12 +289,20 @@ public class ChapterPresenterOfflineImpl implements ChapterPresenter {
 
     @Override
     public void onPreviousClick() {
-        previousChapter();
+        if(mIsRightToLeftDirection) {
+            nextChapter();
+        } else {
+            previousChapter();
+        }
     }
 
     @Override
     public void onNextClick() {
-        nextChapter();
+        if(mIsRightToLeftDirection) {
+            previousChapter();
+        } else {
+            nextChapter();
+        }
     }
 
     @Override
