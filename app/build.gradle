@@ -20,6 +20,11 @@ android {
             applicationIdSuffix ".beta"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             minifyEnabled true
+            versionNameSuffix '-beta'
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
         }
     }
 }
@@ -31,17 +36,17 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:palette-v7:21.0.3'
     // Concurrency:
-    compile 'io.reactivex:rxjava:1.0.7'
+    compile 'io.reactivex:rxjava:1.0.14'
     compile 'io.reactivex:rxandroid:0.23.0'
     // Event Bus:
     compile 'de.greenrobot:eventbus:2.4.0'
     // Networking:
-    compile 'com.squareup.okhttp:okhttp:2.2.0'
-    compile 'com.squareup.okio:okio:1.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.squareup.okio:okio:1.6.0'
     // Cache:
     compile 'com.jakewharton:disklrucache:2.0.2'
     // Databasing:
-    compile 'nl.qbusict:cupboard:2.1.1'
+    compile 'nl.qbusict:cupboard:2.1.2'
     // HTML Parsing:
     compile 'org.jsoup:jsoup:1.8.3'
     // Imaging:

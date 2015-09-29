@@ -249,7 +249,7 @@ public class English_Mangafox implements Source{
     }
 
     private String findNextUrlFromParsedDocument(Document parsedDocument) {
-        Element nextUrlElement = parsedDocument.select("div#nav").select("li a:containsOwn(Next)").first();;
+        Element nextUrlElement = parsedDocument.select("div#nav").select("li a:has(span.next)").first();
 
         if (nextUrlElement != null) {
             return "http://mangafox.me/releases/" + nextUrlElement.attr("href");
@@ -643,7 +643,7 @@ public class English_Mangafox implements Source{
             sqLiteDatabase.endTransaction();
         }
 
-        Element nextUrlElement = parsedDocument.select("div#nav").select("li a:containsOwn(Next)").first();
+        Element nextUrlElement = parsedDocument.select("div#nav").select("li a:has(span.next)").first();
         if (nextUrlElement != null) {
             return "http://mangafox.me/directory/" + nextUrlElement.attr("href");
         }

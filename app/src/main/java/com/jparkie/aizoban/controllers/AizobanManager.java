@@ -25,6 +25,7 @@ import com.jparkie.aizoban.utils.wrappers.RequestWrapper;
 import com.squareup.okhttp.Response;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -145,7 +146,12 @@ public class AizobanManager {
                                                         String fileDirectory = downloadPage.getDirectory();
                                                         String fileName = downloadPage.getName();
                                                         String fileType = response.body().contentType().subtype();
-                                                        InputStream fileData = response.body().byteStream();
+                                                        InputStream fileData = null;
+                                                        try {
+                                                            fileData = response.body().byteStream();
+                                                        } catch (IOException e) {
+                                                            e.printStackTrace();
+                                                        }
 
                                                         return AizobanManager.saveInputStreamToDirectory(fileData, fileDirectory, fileName + "." + fileType);
                                                     }
