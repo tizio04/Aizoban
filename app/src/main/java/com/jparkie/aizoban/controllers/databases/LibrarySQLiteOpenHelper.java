@@ -41,7 +41,8 @@ public class LibrarySQLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Do Nothing.
+        Cupboard libraryCupboard = constructCustomCupboard();
+        libraryCupboard.withDatabase(db).upgradeTables();
     }
 
     private Cupboard constructCustomCupboard() {
