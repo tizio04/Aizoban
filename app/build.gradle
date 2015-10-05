@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "net.chevione.aizoban"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 23
         versionCode 29
         versionName "1.2.7"
     }
@@ -32,9 +32,9 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     // Android Support Library:
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.android.support:palette-v7:21.0.3'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:palette-v7:23.0.1'
     // Concurrency:
     compile 'io.reactivex:rxjava:1.0.14'
     compile 'io.reactivex:rxandroid:0.23.0'
