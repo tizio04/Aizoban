@@ -35,7 +35,7 @@
 
 <p>An Aizōban is a quality collector's edition volume. Likewise, "Aizoban: Your Manga Reader" is an online and an offline manga reader which aims to provide a great visual user experience when browsing and reading manga.</p>
 
-<p>✔ Access to over 35 000 manga series from currently 5 sources: MangaEden (EN), MangaHere (EN), MangaReader (EN), MangaEden (IT), and MangaHere (ES).<br>
+<p>✔ Access to over 90 000 manga series from currently 8 sources: Batoto (EN), Batoto (ES), MangaEden (EN), Mangafox (EN), MangaHere (EN), MangaReader (EN), MangaEden (IT), and MangaHere (ES).<br>
 ✔ Amazingly fast and immersing viewer with options to switch reading direction, lock orientation, and lock zoom.<br>
 ✔ A search tool capable of instantly filtering and ordering manga series by name, genre (not for all sources), and status.<br>
 ✔ An "Exploring" function to discover random manga series.<br>
@@ -46,41 +46,82 @@
 <h3>
 <a id="whats-new" class="anchor" href="#whats-new" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's New?</h3>
 
-<p><strong>Version 1.0.3</strong>:</p>
-
+<p><strong>Version 1.2.7</strong>:</p>
 <ul>
-<li>Immersive Mode for 4.4+ Android users.</li>
-<li>Partial fix for Chapter Help for 4.1 to 4.3 Android users.</li>
-<li>General fixes to some views.</li>
+<li>General local database update (now with over 90.000 manga)</li>
+<li>New sources (#40): Mangafox (EN), Batoto (ES)</li>
+<li>Android 6.0 Marshmallow support</li>
+<li>New translation: german</li>
+<li>New options: sort chapters (#43), hide page numbers (#44)</li>
+<li>Share option for manga</li>
+<li>Next/Previous chapter button enhancements (#36)</li>
+<li>Reading progress indicator (Recent Chapters)</li>
+<li>Visual improvements:</li>
+  <ul><li>New app icon (#54)</li>
+  <li>Adjusted statusbar color</li>
+  <li>Rearranged settings</li>
+</ul>
+<ul><li>Bug fixes:</li>
+  <li>Search term problem with trailing whitespace</li>
+  <li>Broken Batoto thumbnails</li>
+  <li>Missing MangaEden filter options for "Genre"</li>
+</ul></ul>
+
+<p><strong>Version 1.2.6</strong>:</p>
+<ul>
+<li>Added keep screen on flag.</li>
 </ul>
 
-<p><strong>Version 1.0.2</strong>:</p>
-
+<p><strong>Version 1.2.5</strong>:</p>
 <ul>
-<li>Fixed overlapping chapter downloads.</li>
-<li>Fixed MangaEden naming.</li>
+<li>Updated local database.</li>
 </ul>
 
-<p><strong>Version 1.0.1</strong>:</p>
-
+<p><strong>Version 1.2.4</strong>:</p>
 <ul>
-<li>Hopefully fix boot (Lollipop users) and memory crashes.</li>
+<li>Fixed latest updated bug for MangaEden sources.</li>
 </ul>
+
+<p><strong>Version 1.2.3</strong>:</p>
+<ul>
+<li>Some visual changes.</li>
+<li>Some bug fixes.</li>
+<li>Suppress some device manufacturers causing errors with menus for some Android 4.2.2 users. </li>
+</ul>
+
+<p><strong>Version 1.2.2</strong>:</p>
+<ul>
+<li>Added progress indicator in Immersive Mode.</li>
+<li>Improved image sharpness by using more memory.</li>
+<li>Fixed pre-loading images.</li>
+<li>Updated local database with Batoto (EN).</li>
+<li>Batch fetching image links for 5 times faster chapter loading.</li>
+</ul>
+
+<p><strong>Version 1.2.1</strong>:</p>
+<ul>
+<li>Downgraded Glide dependency because it caused random crashes.</li>
+</ul>
+
+<p><strong>Version 1.2.0</strong>:</p>
+<ul>
+<li>Updated chapter viewer.</li>
+<li>"Add To Queue" shows chapters in ascending order.</li>
+<li>Able to choose startup screen.</li>
+<li>Able to resume a recent chapter.</li>
+<li>Adjacent downloaded chapters now works.</li>
+<li>Improved general performance.</li>
+<li>Able to clear latest manga.</li>
+<li>Catalogue is now paginated for performance.</li>
+<li>Page selection in chapter viewer.</li>
+</ul>
+
+<p><a href="https://github.com/jparkie/Aizoban/milestones?state=closed"><strong><em>Versions...</em></strong></a></p>
 
 <p><strong>Version 1.0.0</strong>:</p>
-
 <ul>
 <li>The application has been rewritten. All prior data from previous versions of Alpha and Beta will be lost. To clear old data from previous versions, please "Clear Data" for Aizoban in your device's "Setting" application.</li>
 </ul>
-
-<h3>
-<a id="apk-download" class="anchor" href="#apk-download" aria-hidden="true"><span class="octicon octicon-link"></span></a>APK Download</h3>
-
-<p><a href="Aizoban/Aizoban_16.apk"><strong>Direct Download</strong>: (Version 1.03)</a></p>
-
-<p><a href="https://play.google.com/store/apps/details?id=com.jparkie.aizoban">
-  <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png">
-</a></p>
 
 <h2>
 <a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
@@ -88,26 +129,10 @@
 <h3>
 <a id="phone" class="anchor" href="#phone" aria-hidden="true"><span class="octicon octicon-link"></span></a>Phone</h3>
 
-<p><img src="https://cloud.githubusercontent.com/assets/9499097/5429149/25b54f9e-83af-11e4-88a1-52da523862dd.png" alt="1">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429152/25b9383e-83af-11e4-9116-fee08b1b257d.png" alt="2">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429150/25b6a038-83af-11e4-9f10-a7333b569cca.png" alt="3">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429153/25baf610-83af-11e4-87cb-6372988bc76a.png" alt="4">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429151/25b889de-83af-11e4-9288-37b3757a6ec1.png" alt="5">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429155/25bcb338-83af-11e4-8d79-e5d1a9ff77a7.png" alt="6">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429154/25bc361a-83af-11e4-9dd6-a80693983405.png" alt="7">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5429156/25c10622-83af-11e4-8ec8-a67a434bcc38.png" alt="8"></p>
-
-<h3>
-<a id="7-inch-tablet" class="anchor" href="#7-inch-tablet" aria-hidden="true"><span class="octicon octicon-link"></span></a>7-inch Tablet</h3>
-
-<p><img src="https://cloud.githubusercontent.com/assets/9499097/5603074/bd5e8c16-9340-11e4-856a-000fd5101a17.png" alt="9">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5603075/bd65f88e-9340-11e4-9199-5ae165e94d9e.png" alt="10"></p>
-
-<h3>
-<a id="10-inch-tablet" class="anchor" href="#10-inch-tablet" aria-hidden="true"><span class="octicon octicon-link"></span></a>10-inch Tablet</h3>
-
-<p><img src="https://cloud.githubusercontent.com/assets/9499097/5603077/c1e562f0-9340-11e4-8e4a-b6bc9506c423.png" alt="11">
-<img src="https://cloud.githubusercontent.com/assets/9499097/5603076/c1e50c7e-9340-11e4-895f-4b343b32a3e8.png" alt="12"></p>
+<p><img src="https://cloud.githubusercontent.com/assets/3715409/10287685/d710bf26-6b94-11e5-9f50-529873bb1b73.png" alt="1">
+<img src="https://cloud.githubusercontent.com/assets/3715409/10287704/efc57214-6b94-11e5-929e-2922d54cba88.png" alt="2">
+<img src="https://cloud.githubusercontent.com/assets/3715409/10287709/f3488eda-6b94-11e5-8046-71b3ddfce0d1.png" alt="3">
+<img src="https://cloud.githubusercontent.com/assets/3715409/10287711/f5815a06-6b94-11e5-88d1-f4f8bc6c7408.png" alt="4"></p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
@@ -134,6 +159,9 @@ limitations under the License.
         </section>
 
         <aside id="sidebar">
+          <a href="https://github.com/CheviOne/Aizoban/releases/download/v1.2.7/Aizoban_v1.2.7.apk" class="button">
+            <small>Download</small>
+            .apk file
           <a href="https://github.com/CheviOne/Aizoban/zipball/master" class="button">
             <small>Download</small>
             .zip file
