@@ -1,6 +1,7 @@
 package com.jparkie.aizoban.views.widgets;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
@@ -132,7 +133,11 @@ public class GestureImageView extends ImageView {
         }
 
         mBaseMatrix.postScale(actualScale, actualScale);
-        mBaseMatrix.postTranslate((getWidth() - mBitmapWidth * actualScale) / 2.00f, (getHeight() - mBitmapHeight * actualScale) / 2.00f);
+        if(mViewType.equals(VIEW_TYPE_FIT_WIDTH) && getContext().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            mBaseMatrix.postTranslate((getWidth() - mBitmapWidth * actualScale) / 2.00f, 0);
+        } else {
+            mBaseMatrix.postTranslate((getWidth() - mBitmapWidth * actualScale) / 2.00f, (getHeight() - mBitmapHeight * actualScale) / 2.00f);
+        }
 
         mInitialized = true;
     }
