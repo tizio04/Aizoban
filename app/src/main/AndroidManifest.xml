@@ -57,7 +57,7 @@
             android:name=".controllers.downloads.DownloadService"
             android:exported="false"
             android:label="@string/service_name"
-            android:icon="@drawable/ic_logo">
+            android:icon="@drawable/aizoban_statusbar">
         </service>
 
     </application>

@@ -560,7 +560,7 @@ public class DownloadService extends Service implements Observer<File> {
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
         mDownloadNotificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_logo)
+                .setSmallIcon(R.drawable.aizoban_notification)
                 .setContentTitle(getText(R.string.notification_download_title))
                 .setContentText(getText(R.string.notification_download_text))
                 .setProgress(0, 0, true)

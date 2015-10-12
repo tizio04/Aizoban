@@ -9,6 +9,6 @@
         android:layout_width="@dimen/splash_logo_diameter"
         android:layout_height="@dimen/splash_logo_diameter"
         android:layout_gravity="center"
-        android:src="@drawable/splash_logo" />
+        android:src="@drawable/aizoban_splash" />
 
 </FrameLayout>
