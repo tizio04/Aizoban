@@ -19,5 +19,5 @@ allprojects {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.7' //version required
+    gradleVersion = '2.8' //version required
 }
