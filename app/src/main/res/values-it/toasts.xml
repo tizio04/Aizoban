@@ -9,10 +9,10 @@
     <string name="toast_cleared_recent">Lista dei capitoli recenti cancellata</string>
     <string name="toast_external_storage_error">Impossibile montare la memoria esterna. Riprovare.</string>
     <string name="toast_latest_error">Impossibile caricare le ultime uscite. Riprovare.</string>
-    <string name="toast_manga_error">Impossibile caricare le uscite del manga. Riprovare.</string>
+    <string name="toast_manga_error">Impossibile caricare il manga. Riprovare.</string>
     <string name="toast_no_next_chapter">Nessun capitolo successivo esistente</string>
     <string name="toast_no_previous_chapter">Nessun capitolo precedente esistente</string>
-    <string name="toast_no_next_page">Nessuna pagina successiva esistetnte</string>
+    <string name="toast_no_next_page">Nessuna pagina successiva esistente</string>
     <string name="toast_no_previous_page">Nessuna pagina precedente esistente</string>
     <string name="toast_not_initialized">Non inizializzato. Riprovato.</string>
 
