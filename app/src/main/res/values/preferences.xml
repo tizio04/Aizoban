@@ -43,8 +43,6 @@
     <string name="preference_source_title">Current Source</string>
     <string name="preference_source_title_summary">Choose the current manga source to use for reading</string>
     <string-array name="preference_source_entries">
-        <item>Batoto (EN)</item>
-        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
         <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
@@ -54,8 +52,6 @@
         <item>MangaReader (EN)</item>
     </string-array>
     <string-array name="preference_source_values">
-        <item>Batoto (EN)</item>
-        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
         <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
