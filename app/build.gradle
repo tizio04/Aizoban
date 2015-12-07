@@ -32,16 +32,16 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     // Android Support Library:
-    compile 'com.android.support:support-v4:23.0.1'
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:palette-v7:23.0.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:palette-v7:23.1.1'
     // Concurrency:
-    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxjava:1.0.17'
     compile 'io.reactivex:rxandroid:0.23.0'
     // Event Bus:
     compile 'de.greenrobot:eventbus:2.4.0'
     // Networking:
-    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
     compile 'com.squareup.okio:okio:1.6.0'
     // Cache:
     compile 'com.jakewharton:disklrucache:2.0.2'
