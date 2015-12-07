@@ -30,6 +30,7 @@
             android:footerDividersEnabled="false"
             android:choiceMode="multipleChoice"
             android:fastScrollEnabled="true"
+            android:scrollbarStyle="outsideInset"
             android:listSelector="@drawable/item_selector"
             android:id="@+id/listView"/>
 
