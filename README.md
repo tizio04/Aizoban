@@ -9,7 +9,7 @@ This Android application allows users to browse a catalogue of mangas from vario
 
 ### APK Download
 
-[**Direct Download**: (Version 1.2.7)](https://github.com/CheviOne/Aizoban/releases/download/v1.2.7/Aizoban_v1.2.7.apk)
+[**Direct Download**: (Version 1.2.8)](https://github.com/CheviOne/Aizoban/releases/download/v1.2.8/Aizoban_v1.2.8.apk)
 
 ## Source
 
